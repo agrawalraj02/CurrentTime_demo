@@ -24,7 +24,7 @@ jobs:
          run: dotnet build ./CurrentTimeService.sln --configuration Release --no-restore
 
        - name: Publish
-         run: dotnet publish ./CurrentTimeService.sln --configuration Release --nobuild
+         run: dotnet publish ./CurrentTimeService.sln --configuration Release --no-build
 
         
 
