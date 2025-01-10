@@ -16,8 +16,6 @@ jobs:
          uses: action/setup-dotnet@v3
          with:
            dotnet-version: '8.0.x'
-
-       - name: Restore
-         run: dotnet restore ./CurrentTimeService.sln      
+    
 
   
