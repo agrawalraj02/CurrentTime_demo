@@ -15,7 +15,8 @@ namespace CurrentTime
              
 
 
-            var app = builder.Build();            
+            var app = builder.Build(); 
+            
 
             app.UseHttpsRedirection();
             app.MapGet("time/utc", () =>  Results.Ok(DateTime.UtcNow) );
