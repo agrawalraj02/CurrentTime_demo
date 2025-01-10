@@ -18,14 +18,6 @@ jobs:
            dotnet-version: '6.0.x'
 
        - name: Restore
-         run: dotnet restore ./CurrentTimeService.sln
-
-       - name: Build
-         run: dotnet build ./CurrentTimeService.sln --configuration Release --no-restore
-
-       - name: Publish
-         run: dotnet publish ./CurrentTimeService.sln --configuration Release --no-build
-
-        
+         run: dotnet restore ./CurrentTimeService.sln      
 
   
