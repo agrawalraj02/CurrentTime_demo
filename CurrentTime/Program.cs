@@ -22,6 +22,7 @@ namespace CurrentTime
             app.MapGet("time/utc", () =>  Results.Ok(DateTime.UtcNow) );
             
 
+
             
 
             app.Run();
