@@ -1,0 +1,21 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - master
+    
+jobs:
+   publish:
+     runs-on: ubuntu-latest
+
+     steps:
+       - uses: actions/checkout@v4
+       - name: Setup .Net
+         uses: action/setup-dotnet@v4
+         with:
+           dotnet-version: '8.0.x'
+    
+
+  
